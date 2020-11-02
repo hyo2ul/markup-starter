@@ -1,0 +1,82 @@
+@import "abstract/normalize";
+@import "abstract/reset";
+@import "abstract/fonts";
+
+$max-width: 1200px;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0 solid #e2e8f0;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5;
+  font-family: Inter var, "NotoSansCJK", system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue,
+    Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 16px;
+}
+
+body {
+  color: #192f61;
+  letter-spacing: -1px;
+}
+
+button,
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: #fedc09;
+  color: #192f61;
+}
+
+.row {
+  display: flex;
+  .col {
+    flex: 1;
+    max-width: 100%;
+    &-none {
+      flex: none;
+    }
+  }
+}
+
+.is-desktop {
+  display: block !important;
+}
+
+.is-mobile {
+  display: none !important;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 20px;
+  height: 50px;
+  background-color: #fedc09;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  line-height: 50px;
+  color: #192f61;
+  &-block {
+    display: block;
+    width: 100%;
+  }
+}
+
+.header {
+}
+
+.section {
+}
+
+.footer {
+}
